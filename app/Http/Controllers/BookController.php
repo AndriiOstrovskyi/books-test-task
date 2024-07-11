@@ -17,7 +17,9 @@ class BookController extends Controller
                 ->orWhere('author', 'like', '%' . $search . '%');
         }
 
-        $books = $query->orderBy('created_at', 'desc')->take(10)->get();
+        
+        $books = $query->orderBy('created_at', 'desc')->paginate(10);
+
         return view('books.index', compact('books'));
     }
 

@@ -32,6 +32,10 @@
     <div class="text-center">
         <button onclick="location.reload();" class="btn btn-secondary mt-3 mb-3 p-2 rounded bg-black text-white">Оновити список книг</button>
     </div>
+
+    <div class="d-flex justify-content-center mt-4 mb-4">
+        {{ $books->links() }}
+    </div>
 </div>
 <script>
     setInterval(function() {
