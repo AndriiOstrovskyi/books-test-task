@@ -16,14 +16,6 @@ To migrate the database and create necessary tables, run:
 php artisan migrate
 ```
 
-## 2. Generate keys
-
-To generate encryption keys, run:
-
-```bash
-php artisan key:generate
-```
-
 ## 3. Run the server
 
 To run the server, run:

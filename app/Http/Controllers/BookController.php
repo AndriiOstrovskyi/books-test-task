@@ -32,6 +32,7 @@ class BookController extends Controller
             'title' => 'required|string|max:255',
             'author' => 'required|string|max:255',
             'cover_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description' => 'required|string|max:1000',
             'publication_date' => 'required|date',
         ]);
 
@@ -39,6 +40,7 @@ class BookController extends Controller
         $book->title = $request->title;
         $book->author = $request->author;
         $book->publication_date = $request->publication_date;
+        $book->description = $request->description;
 
         if ($request->hasFile('cover_image')) {
             $image = $request->file('cover_image');

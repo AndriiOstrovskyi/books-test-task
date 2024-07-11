@@ -21,6 +21,10 @@
             <label for="cover_image">Обкладинка книги</label>
             <input type="file" class="form-control-file" id="cover_image" name="cover_image">
         </div>
+        <div class="form-group">
+            <label for="description">Опис</label>
+            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+        </div>
         <button type="submit" class="btn btn-primary">Додати книгу</button>
     </form>
 </div>
