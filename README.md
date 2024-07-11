@@ -24,7 +24,15 @@ To run the server, run:
 php artisan serve
 ```
 
-## 4. Run node server
+## 4. install node
+
+To install node, run:
+
+```bash
+npm install
+```
+
+## 5. Run node server
 
 To run the node server, run:
 
